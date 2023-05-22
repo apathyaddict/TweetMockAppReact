@@ -2,6 +2,10 @@
 
 This project is a micro-blogging application that allows users to create, view, and interact with tweets. It includes various milestones that add different features and functionalities to the application.
 
+## Demo
+
+A live demo of the micro-blogging application can be accessed at [Demo Link](https://https://micro-blog-f57a3.web.app/register.com).
+
 ## General Overview
 
 The micro-blogging application provides the following functionality:
@@ -42,6 +46,3 @@ The micro-blogging application utilizes the following technologies:
 - Figma for designing the user interface.
 - Firebase Hosting for deploying the application to a remote server.
 
-## Demo
-
-A live demo of the micro-blogging application can be accessed at [Demo Link](https://https://micro-blog-f57a3.web.app/register.com).
