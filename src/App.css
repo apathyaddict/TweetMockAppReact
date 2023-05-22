@@ -1,0 +1,588 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  /* border: 1px solid lightblue; */
+}
+
+p {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+body {
+  background-color: #15202b;
+}
+
+.form {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  flex-direction: column;
+  margin-top: 1rem;
+  border: 1.5px solid #cccccc;
+  border-radius: 6px;
+}
+
+#textarea {
+  flex: 1;
+  width: 100%;
+  resize: none;
+  background-color: #15202b;
+  color: white;
+  padding: 1rem;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  font-weight: 400;
+}
+
+.div-container-form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  text-align: right;
+  flex-direction: column;
+}
+
+.div-bottom-form {
+  display: flex;
+  flex-direction: row;
+  align-items: space-evenly;
+  width: 100%;
+  justify-content: right;
+}
+
+.btn-tweet {
+  display: block;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: right;
+  border-radius: 6px;
+  border: none;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.btn-tweet:disabled {
+  background-color: #0a4e95;
+  color: #637e95;
+  cursor: auto;
+}
+
+.character-warning {
+  margin-top: 0.7rem;
+  margin-right: 1rem;
+  color: #721c24;
+  background-color: #f5c6cb;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 400;
+  align-self: first baseline;
+}
+
+.div-container-tweets {
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 65%;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+li {
+  background-color: #343a40;
+  color: white;
+  font-size: 1rem;
+  border-radius: 6px;
+  list-style-type: none;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.li-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-direction: row;
+  margin-top: 0.5rem;
+  color: #6c757d;
+}
+
+.link:hover{
+  color:#b1b5ba;
+font-weight: 600;
+zoom: 0.1;
+cursor: pointer;
+}
+
+.li-bottom-row {
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.navbar {
+  height: 45px;
+  margin: 0 auto;
+  background-color: #343a40;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.login-warning-main {
+  margin: 0 auto;
+  margin-top: 5rem;
+  border-bottom: grey 1px solid;
+  color: white;
+  text-align: center;
+  width: 50%;
+  font-size: 1;
+}
+
+.menu-link-item {
+  font-size: 0.9rem;
+  margin: 1rem;
+  padding: 0 1rem;
+  font-weight: 200;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  color:white;
+}
+
+.menu-link-item-notlink {
+  font-size: 0.9rem;
+  margin: 1rem;
+  font-weight: 200;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  gap: 0.5rem;
+}
+
+.menu-link-item:hover {
+  font-weight: 400;
+}
+.active-menu{
+  font-size: 0.9rem;
+  color:white;
+  margin: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  gap: 0.5rem;
+}
+
+.main-div-profile {
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 50%;
+}
+
+.second-div-profile {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title-profile {
+  font-weight: 400;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.user-name-text {
+  color: white;
+
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.user-name-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: #15202b;
+  margin-bottom: 1rem;
+  outline: none;
+  color: white;
+}
+
+.btn-save-username {
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #007bff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-save-username:hover {
+  background-color: #0a4e95;
+}
+
+.btn-div {
+  text-align: right;
+}
+
+/* login design */
+
+.main-container-login {
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-box-login {
+  width: 45%;
+  background: linear-gradient(#e66465, #9198e5);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.input-login {
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  display: block;
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.24);
+}
+
+.spacer {
+  margin: 1rem;
+}
+
+.btn-login {
+  background-color: white;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 4px;
+  margin-top: 1rem;
+  opacity: 30%;
+  display: inline-block;
+  text-decoration: none;
+  color: #555555;
+  line-height: 1.2;
+  min-width: 190px;
+}
+
+.btn-login:hover {
+  transform: scale(1.02);
+  opacity: 90%;
+  color: #15202b;
+}
+
+.logout-text {
+  font-size: 14px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.logout-text:hover {
+  border-bottom: 1px solid white;
+}
+
+.signup-text {
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.btn-register {
+  border: none;
+  background-color: transparent;
+  padding-left: 0.3rem;
+  color: white;
+  cursor: pointer;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+.btn-register:hover {
+  color: rebeccapurple;
+}
+
+#browse-input {
+  font-weight: 200;
+  width: 90%;
+}
+
+.div-photo-profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-content: center;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 45px;
+  height: 45px;
+  margin-right: 1rem;
+}
+
+.navbar-photo {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+}
+
+.profile-pic-tweet {
+  border: 1px solid white;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 30px;
+  height: 30px;
+
+  vertical-align: center;
+  margin-top: 1.3rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  object-fit: cover;
+}
+
+.li-middle-row {
+  display: flex;
+  flex-direction: column;
+  align-content: right;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.tweet-left {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  flex-direction: row;
+}
+
+.btn-google {
+  min-width: 190px;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  text-decoration: none;
+  background-color: white;
+  opacity: 30%;
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.2;
+}
+
+.btn-google:hover {
+  background-color: #4285f4;
+  opacity: 1;
+  color: white;
+}
+
+.btn-filter-div {
+  margin: 0 auto;
+  width: 65%;
+  display: flex;
+  align-content: right;
+  justify-content: right;
+  gap: 1.5rem;
+}
+
+.btn-filter {
+  margin-right: 1rem;
+  margin-top: 1.5rem;
+  background-color: white;
+  color: #15202b;
+  border: none;
+  padding: 0.4rem;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 60%;
+  font-weight: 500;
+}
+
+.btn-filter.active {
+  background-color: #007bff;
+  color: white;
+  opacity: 100%;
+}
+
+.btn-filter:hover {
+  opacity: 100%;
+}
+
+.mytweets-li {
+  background-color: rgba(255, 255, 255, 0.893);
+}
+
+.mytweets-p {
+  color: #007bff;
+}
+
+.searchInput {
+  margin-left: 0.5rem;
+  width: 150px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
+.select-dropdown {
+  background: transparent;
+  color: white;
+  border: none;
+  font-weight: 300;
+}
+
+.btn-filter:disabled {
+  cursor: auto;
+  background-color: white;
+  opacity: 20%;
+}
+
+.btn-like {
+  opacity: 100%;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.3rem 1rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  border: 1px solid #575758;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  background-color: transparent
+  
+}
+.btn-like:hover{
+ background-color: #34383a;
+}
+.btn-like.active {
+  color:#e63b7a;
+}
+
+#heartSVG{
+ padding-left:0.5rem;
+  color: black;
+  opacity: 20%;
+ 
+}
+#heartSVG.active{
+  animation:like 0.5s 1;
+  color: #e63b7a; 
+  opacity: 100%;
+}
+
+  @keyframes like {
+    0%   { transform: scale(1); }
+    90%   { transform: scale(1.3); }
+    100% { transform: scale(1.1); }
+  }
+
+.div-container-userpage{
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ border:white 1px solid;
+ border-radius: 5px;
+}
+.userpage-name{
+  margin-top: 1rem;
+  color:white;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+}
+
+.userpage-profile-pic{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width:200px;
+  height:200px;
+  border: 3px solid white;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.main-div-left{
+  margin: 0 auto;
+  display:flex;
+  flex-direction: column;
+  width:50%;
+  align-items: left;
+  justify-content: left;
+}
+
+::-webkit-input-placeholder {
+  color: #ffff;
+}
+
+::-moz-placeholder {
+  color: ffff;
+}
+
+::-ms-placeholder {
+  color: #ffff;
+}
+
+::placeholder {
+  color: #ffff;
+}
+
