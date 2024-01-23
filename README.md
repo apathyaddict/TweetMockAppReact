@@ -4,7 +4,7 @@ This project is a micro-blogging application that allows users to create, view, 
 
 ## Demo
 
-A live demo of the micro-blogging application can be accessed at [Demo Link](https://https://micro-blog-f57a3.web.app/register.com).
+A live demo of the micro-blogging application can be accessed at ([https://https://micro-blog-f57a3.web.app/register.com](https://micro-blog-f57a3.web.app/register)).
 
 ## General Overview
 
